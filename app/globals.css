@@ -3,6 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -120,3 +121,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.root-container {
+  @apply flex min-h-screen flex-1 flex-col bg-background ;
+
+}
+
+/*  Tomorrow I will work from home about this task  */
