@@ -1,11 +1,14 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from 'tailwindcss/defaultTheme'
+import colors from 'tailwindcss/colors'
 
 export default {
-  // darkMode: ["class"],
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{html,js,ts,jsx,tsx,mdx}",
+     './src/**/*.{html,js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -24,10 +27,10 @@ export default {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
-        // primary: {
-        //   DEFAULT: "hsl(var(--primary))",
-        //   foreground: "hsl(var(--primary-foreground))",
-        // },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
@@ -54,10 +57,10 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-        primary: {
-          DEFAULT: "#E7C9A5",
-          admin: "#25388C",
-        },
+        // primary: {
+        //   DEFAULT: "#E7C9A5",
+        //   admin: "#25388C",
+        // },
         green: {
           DEFAULT: "#027A48",
           100: "#ECFDF3",
@@ -99,14 +102,12 @@ export default {
         },
       },
       screens: {
-        'xs': '480px',  // Adds an `xs:` breakpoint at 480px
-      'sm': '640px',
-      'md': '768px',
+        xs: "480px",
       },
       borderRadius: {
-        // lg: "var(--radius)",
-        // md: "calc(var(--radius) - 2px)",
-        // sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
         pattern: "url('/images/pattern.webp')",
