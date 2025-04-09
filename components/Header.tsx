@@ -2,10 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-// import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
-//   const pathname = usePathname();
+  const pathname = usePathname();
   return (
     <header className="my-10 flex justify-between gap-5">
       <Link href="/">BookWise</Link>
@@ -15,7 +15,7 @@ const Header = () => {
             href="/library"
             className={cn(
               "text-base cursor-pointer capitalize",
-            //   pathname === "/library" ? "text-light-200" : "text-light-100"
+              pathname === "/library" ? "text-light-200" : "text-light-100"
             )}
           >
             Library
