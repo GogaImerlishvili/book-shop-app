@@ -2,6 +2,15 @@ import type { Config } from "tailwindcss";
 import defaultTheme from 'tailwindcss/defaultTheme'
 import colors from 'tailwindcss/colors'
 
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        bebas: ["var(--bebas-neue)", "sans-serif"],
+      },
+    },
+  },
+};
 export default {
   // darkMode: ["class"],
   content: [

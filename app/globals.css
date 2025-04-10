@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
+
+@layer base {
+  :root {
+    --bebas-neue: "Bebas Neue", sans-serif; /* Fallback to sans-serif */
+  }
+}
 /* Root */
+
+/* Import the font */
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 .root-container {
   @apply flex min-h-screen flex-1 flex-col text-white px-5;
