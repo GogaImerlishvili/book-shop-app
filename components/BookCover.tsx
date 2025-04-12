@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const BookCover = () => {
-    return (
-        <div>
-BookCover Letter
-        </div>
-    )
+interface Props {
+  className?: string;
+  variant: "wide" | "smaill";
+  coverColor: string;
+  coverImage: string;
 }
 
-export default BookCover
+const BookCover = ({ className, variant, coverColor, coverImage }: Props) => {
+  return <div>BookCover Letter</div>;
+};
+
+export default BookCover;
