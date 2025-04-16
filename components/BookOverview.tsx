@@ -22,7 +22,7 @@ const BookOverview = ({
         </h1>
         <div className="mt-7 flex flex-row flex-wrap gap-4 text-xl text-amber-100">
           <p>
-            By
+            By 
             <span className="font-semibold text-amber-200 mx-1.5">
               {author}
             </span>
@@ -41,7 +41,7 @@ const BookOverview = ({
             Total Books: <span>{total_copies}</span>
           </p>
           <p>
-            Available Books: <span>{available_copies}</span>
+            Available Bookss: <span>{available_copies}</span>
           </p>
         </div>
         <p className="mt-2 text-justify text-xl text-amber-200 max-w-[40rem]">
